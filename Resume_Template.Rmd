@@ -20,20 +20,20 @@ Aside
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
-- <i class="fa fa-envelope"></i> lijia.yu@outlook.com
-- <i class="fa fa-github"></i> [github.com/yulijia](https://github.com/yulijia)
-- <i class="fa fa-phone"></i> +1 000-000-0000
+- <i class="fa fa-envelope"></i> ryand1@goldmail.etsu.edu
+- <i class="fa fa-github"></i> [github.com/Homer-Sleep](https://github.com/Homer-Sleep)
+- <i class="fa fa-phone"></i> (423) 255-5567
 - For more information, please contact me via email.
 
 
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Experienced in statistical analysis, statistical learning models, and optimization methods.
+- Strong background in developing, analyzing, interpreting, and effectively sharing research results.
 
-- Full experience with next generation sequencing data analysis.
+- Experience developing data pipelines.
 
-- Highly skilled in R, Bash, Perl, Python, LaTeX
+- Highly skilled in R, R Markdown, ggplot2, MATLAB, & EEGLAB. 
 
 
 Disclaimer {#disclaimer}
@@ -51,37 +51,33 @@ Main
 David Ryan {#title}
 --------------------------------------------------------------------------------
 
-### Currently searching for a PhD student position
-
-Please note that this is a *real* resume, and I'm really looking for a PhD
-student position at the moment. I made this resume because Yihui asked me
-if I'd like to test the **pagedown** package with my resume. If you are
-interested in my background and skills, please feel free to contact me.
-
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-### Beijing University of Chemical Technology
+### East Tennessee State University
 
-B.S. in Information and Computing Sciences
+Ph.D. in Experimental Psychology
 
-Beijing, China
-
-2010
-
-Thesis: Dyadic wavelet and its application in edge detection
-
-### University of Chinese Academy of Sciences
-
-M.S. in Bioinformatics
-
-Beijing, China
+Johnson City, TN
 
 2014
 
-Thesis: A multi-omics study for intra-individual divergence of the distributions between mRNA isoforms in mammals
+### East Tennessee State University
 
+M.A. in Experimental Psychology
+
+Johnson City, TN
+
+2011
+
+### University of Tennessee
+
+B.A. in Psychology
+
+Knoxville, TN
+
+2006
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -123,13 +119,12 @@ AL, USA
 Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Data Scientist, intern
+### Research Health Science Specialist
+Hearing and Balance Research Program; James H. Quillen VAMC 
 
-SupStat Inc.
+Johnson City, TN
 
-Beijing, China
-
-2014
+2016 -
 
 ::: concise
 - Taught R language to beginners. 
@@ -137,13 +132,15 @@ Beijing, China
 - Converted statistical tutorials from SPSS to R language.
 :::
 
-### Bioinformatician
+### Consulting Associate
+
+Division of Head and Neck Surgery & Communication Sciences, Department of Surgery, Duke University 
 
 My Health Gene Technology Co., Ltd.
 
-Beijing, China
+Durham, North Carolina
 
-2015 - 2016
+2018 – Present 
 
 ::: concise
 - Analyzed whole-exome sequencing data. 
