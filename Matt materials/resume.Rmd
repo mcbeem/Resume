@@ -1,0 +1,240 @@
+---
+title: "Matthew T. McBee's resume"
+author: Matthew McBee
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+    css: ['css/custom_resume.css', 'css/styles.css', 'resume']
+---
+
+```{r, include=F}
+library(glue)
+library(dplyr)
+library(here)
+library(plotBayes)
+```
+
+
+```{r, include=F}
+par(bg=NA) 
+set.seed(1)
+data <- rnorm(n=10, mean=1, sd=1)
+plot.new()
+plotBayes(data, prior.type="normal", prior.parameters=c(0, .5), min=-2, max=2) 
+
+p <- recordPlot()
+dev.off()
+```
+
+
+Aside
+================================================================================
+
+```{r, echo=F}
+p
+```
+
+
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> mmcbee@gmail.com
+- <i class="fa fa-github"></i> [github.com/mcbeem](https://github.com/mcbeem)
+- <i class="fa fa-spinner"></i> [https://osf.io/nwd3a/](https://osf.io/nwd3a/)
+- <i class="fa fa-twitter"></i> [TunnelofFire](https://twitter.com/TunnelOfFire)
+- <i class="fa fa-phone"></i> +1 919-943-7204
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Data science, statistical analysis, machine learning, reproducible computing, Bayesian methods, open science, technical writing, presentation
+
+- Highly skilled in R, R Markdown, ggplot2, Shiny, Tidyverse, SAS, Stata, MPlus, LaTeX
+
+- Expertise in complex data structures, reproducible computing, statistical programming, R package development, causal inference, psychometrics
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+Main
+================================================================================
+
+Matthew McBee {#title}
+--------------------------------------------------------------------------------
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Assistant / Associate Professor of Quantitative Psychology
+
+East Tennessee State University
+
+Johnson City, TN
+
+2011 -
+
+- Tenured & Promoted to Associate Professor in 2016
+- Program Director, Experimental Psychology Ph.D program
+- Teaches statistics, research methods, and statistical programming
+
+### Statistician / Investigator
+
+Frank Porter Graham Child Development Institute  
+University of North Carolina - Chapel Hill
+
+Chapel Hill. NC
+
+2008 - 2011
+
+
+
+- Statistical consulting
+- Study design
+- Data analysis
+- Grant proposal preparation
+- Statistical programming
+
+### Research and Evaluation Specialist
+
+University of North Carolina - General Administration
+
+Chapel Hill, NC
+
+2006 - 2008
+
+- Evaluation design
+- Survey construction
+- Database queries and reports
+- Data cleaning
+- Scripting
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### The University of Georgia
+
+Ph.D. in Educational Psychology
+
+Athens, GA
+
+2006
+
+### The University of Georgia
+
+M.Ed. in Educational Psychology
+
+Athens, GA
+
+2004
+
+### Tennessee Technological University
+
+B.S. in Psychology (Honors)
+
+Cookeville, TN
+
+2002
+
+
+R packages {data-icon=file}
+--------------------------------------------------------------------------------
+
+### giftedCalcs
+
+A package for gifted identification psychometrics. Implements calculations from equations derived in McBee et al. (2016) and in ongoing work. [https://github.com/mcbeem/giftedCalcs](https://github.com/mcbeem/giftedCalcs)
+
+N/A
+
+N/A
+
+### regSim
+
+A package for simple and quick statistical simulation. [https://github.com/mcbeem/regsim](https://github.com/mcbeem/regsim)
+
+N/A
+
+N/A
+
+### plotBayes
+
+A package illustrating the principles of Bayesian inference. [https://github.com/mcbeem/plotBayes](https://github.com/mcbeem/plotBayes)
+
+N/A
+
+N/A
+
+### ZPDGrowthTrajectories
+
+A package for creating and exploring synthetic growth trajectories based on a theoretical model of academic achievement. 
+[https://github.com/mcbeem/ZPDGrowthTrajectories](https://github.com/mcbeem/ZPDGrowthTrajectories)
+
+N/A
+
+N/A
+
+Selected shiny apps {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Critical values and sampling distribution under the null 
+
+[https://mmcbee.shinyapps.io/critical_values/](https://mmcbee.shinyapps.io/critical_values/)
+
+N/A
+
+N/A
+
+### Exact p-value calculator for normal, *t*, *F*, and chi-squared statistics
+
+[https://mmcbee.shinyapps.io/shiny_p_values/](https://mmcbee.shinyapps.io/shiny_p_values/)
+
+N/A
+
+N/A
+
+### Gifted program identification psychometrics explorer
+
+[https://mmcbee.shinyapps.io/gifted_identification_explorer/](https://mmcbee.shinyapps.io/gifted_identification_explorer/)
+
+N/A
+
+N/A
+
+Selected Publications {data-icon=file}
+--------------------------------------------------------------------------------
+
+I have authored two books (1 currently in press), 43 articles in peer-reviewed journals, and delivered 99 presentations at scientific meetings, including two keynote addresses.  
+
+
+```{r, results="asis", echo=F}
+papers <- read.csv("citations.csv", stringsAsFactors=F, header=T)
+
+papers %>%
+  filter(Include==1) %>%
+  glue_data(
+   "### {Title}", "\n\n",
+   "{Publication}. {Pages}", "\n\n",
+   "N/A", "\n\n",
+   "{Year}", "\n\n",
+   "\n\n",
+   "{Authors}",
+   "\n\n\n"
+ )
+
+# papers %>% 
+#   filter(Include==1) %>%
+#   glue_data(
+#    "-{Authors}. ({Year}). {Title}. ", 
+#    "*{Publication}*. *{Volume}*({Number}). {Pages}, {DOI}", 
+#    "\n\n", sep=""
+#  )
+```
